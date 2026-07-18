@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils de Hacking Avancés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🔒 CyberSec Learning</h1>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="types-menaces.html">Menaces</a></li>
+                <li><a href="cryptographie.html">Cryptographie</a></li>
+                <li><a href="reseaux.html">Réseaux</a></li>
+                <li><a href="web.html">Sécurité Web</a></li>
+                <li><a href="hacking.html">Hacking</a></li>
+                <li><a href="outils-hacking.html" class="active">Outils</a></li>
+                <li><a href="techniques-hacking.html">Techniques</a></li>
+                <li><a href="penetration-testing.html">Pen Testing</a></li>
+                <li><a href="ethique-legale.html">Éthique</a></li>
+                <li><a href="bonnes-pratiques.html">Bonnes Pratiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>🛠️ Outils de Hacking Avancés</h2>
+            
+            <h3>Outils essentiels de reconnaissance et scanning</h3>
+            
+            <h4>🌐 Nmap (Network Mapper)</h4>
+            <p>L'outil de scan de réseau le plus populaire.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Scanner les ports, identifier les services</li>
+                <li><strong>Commande basique :</strong> <code>nmap -sV target.com</code></li>
+                <li><strong>Options :</strong> -p (ports spécifiques), -A (détection agressive), -O (détection OS)</li>
+                <li><strong>Utilité :</strong> Découvrir les services actifs et les vulnérabilités potentielles</li>
+            </ul>
+
+            <h4>🔎 Wireshark</h4>
+            <p>Analyseur de trafic réseau puissant.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Capturer et analyser les paquets réseau</li>
+                <li><strong>Utilité :</strong> Voir le trafic en temps réel, détecter les anomalies</li>
+                <li><strong>Cas d'usage :</strong> Déboguer les problèmes réseau, détecter les intrusions</li>
+                <li><strong>Avantage :</strong> Interface graphique intuitive</li>
+            </ul>
+
+            <h4>🔑 Metasploit Framework</h4>
+            <p>Framework complet pour les tests de pénétration avec des exploits.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Exploiter les vulnérabilités automatiquement</li>
+                <li><strong>Contient :</strong> +2000 exploits, payloads, modules de reconnaissance</li>
+                <li><strong>Utilité :</strong> Tester automatiquement les vulnérabilités</li>
+                <li><strong>Commande :</strong> <code>msfconsole</code></li>
+                <li><strong>Payloads :</strong> Meterpreter (accès interactif), reverse shells, webshells</li>
+            </ul>
+
+            <h3>Outils de web hacking avancés</h3>
+            
+            <h4>🕷️ Burp Suite (COMPLET)</h4>
+            <p>La plateforme N°1 pour tester la sécurité des applications web.</p>
+            <ul>
+                <li><strong>Modules principaux :</strong>
+                    <ul>
+                        <li><strong>Proxy :</strong> Intercepte et modifie les requêtes HTTP/HTTPS</li>
+                        <li><strong>Scanner :</strong> Scan automatique des vulnérabilités</li>
+                        <li><strong>Repeater :</strong> Permet de rejouer les requêtes</li>
+                        <li><strong>Intruder :</strong> Attaques par force brute personnalisées</li>
+                        <li><strong>Decoder :</strong> Décode/encode les données</li>
+                        <li><strong>Comparer :</strong> Compare deux requêtes/réponses</li>
+                        <li><strong>Extender :</strong> Plugins personnalisés</li>
+                    </ul>
+                </li>
+                <li><strong>Vulnérabilités détectées :</strong> XSS, CSRF, SQL Injection, XXE, SSRF, etc.</li>
+                <li><strong>Versions :</strong> Community (gratuit) et Professional (payant)</li>
+            </ul>
+
+            <h4>🧪 OWASP ZAP (Zed Attack Proxy)</h4>
+            <p>Outil gratuit et open source pour scanner les applications web.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Tester les vulnérabilités web</li>
+                <li><strong>Avantage :</strong> Gratuit et open source</li>
+                <li><strong>Modules :</strong> Proxy, Scanner, Fuzzer, Spiderquad</li>
+                <li><strong>Utilité :</strong> Alternative à Burp Suite</li>
+            </ul>
+
+            <h4>🔧 SQLmap</h4>
+            <p>Outil automatisé pour détecter et exploiter les injections SQL.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Automatiser l'exploitation des vulnérabilités SQL</li>
+                <li><strong>Commande :</strong> <code>sqlmap -u "URL" --dbs</code></li>
+                <li><strong>Utilité :</strong> Accéder aux bases de données</li>
+                <li><strong>Avantage :</strong> Très automatisé et efficace</li>
+            </ul>
+
+            <h4>📡 Nikto</h4>
+            <p>Scanner web pour détecter les vulnérabilités communes.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Scan les serveurs web</li>
+                <li><strong>Détecte :</strong> Fichiers dangereux, versions obsolètes, configurations faibles</li>
+                <li><strong>Commande :</strong> <code>nikto -h target.com</code></li>
+            </ul>
+
+            <h4>🎯 Dirbuster / Gobuster</h4>
+            <p>Outils pour découvrir les répertoires et fichiers cachés.</p>
+            <ul>
+                <li><strong>Dirbuster :</strong> Version graphique</li>
+                <li><strong>Gobuster :</strong> Version CLI ultra rapide</li>
+                <li><strong>Commande :</strong> <code>gobuster dir -u target.com -w wordlist.txt</code></li>
+                <li><strong>Utilité :</strong> Trouver les pages admin, API cachées, backups</li>
+            </ul>
+
+            <h3>Outils de reconnaissance OSINT avancés</h3>
+            
+            <h4>🕵️ Shodan</h4>
+            <p>Moteur de recherche pour les appareils connectés à Internet.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Trouver les appareils, caméras, serveurs exposés</li>
+                <li><strong>Utilité :</strong> Reconnaissance passive</li>
+                <li><strong>Site :</strong> shodan.io</li>
+                <li><strong>Exemples :</strong> Caméras IP, routeurs, serveurs web</li>
+            </ul>
+
+            <h4>🌍 TheHarvester</h4>
+            <p>Outil pour collecter des informations publiques.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Chercher des emails, sous-domaines, adresses IP</li>
+                <li><strong>Sources :</strong> Google, Bing, LinkedIn, Twitter, Censys</li>
+                <li><strong>Utilité :</strong> Reconnaissance initiale</li>
+                <li><strong>Commande :</strong> <code>theHarvester -d domain.com -b all</code></li>
+            </ul>
+
+            <h4>🔍 Sublist3r</h4>
+            <p>Outil pour découvrir les sous-domaines.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Énumérer tous les sous-domaines</li>
+                <li><strong>Sources :</strong> Google, Censys, Shodan, VirusTotal</li>
+                <li><strong>Commande :</strong> <code>sublist3r -d domain.com</code></li>
+            </ul>
+
+            <h4>🗺️ Maltego</h4>
+            <p>Plateforme de transformation d'informations avec visualisation.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Mapper les relations entre les données</li>
+                <li><strong>Utilité :</strong> Analyse visuelle des données</li>
+                <li><strong>Transforms :</strong> +200 transformations disponibles</li>
+            </ul>
+
+            <h3>Outils de brute force et password cracking</h3>
+            
+            <h4>🔐 Hashcat</h4>
+            <p>GPU-accelerated password recovery tool ultra rapide.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Cracker les hashes de mots de passe</li>
+                <li><strong>Utilise :</strong> La puissance GPU pour accélérer (10-100x plus rapide)</li>
+                <li><strong>Supporte :</strong> 300+ formats de hash (MD5, SHA, bcrypt, NTLM, etc.)</li>
+                <li><strong>Modes :</strong> Dictionary, Brute-force, Hybrid, Mask</li>
+            </ul>
+
+            <h4>🔑 John the Ripper</h4>
+            <p>Outil classique et efficace de crackage de mots de passe.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Cracker les mots de passe</li>
+                <li><strong>Commande :</strong> <code>john hashes.txt</code></li>
+                <li><strong>Utilité :</strong> Tester la force des mots de passe</li>
+            </ul>
+
+            <h4>🎯 Hydra</h4>
+            <p>Outil d'attaque par force brute multiprotocoles.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Tester les identifiants par force brute</li>
+                <li><strong>Protocoles :</strong> SSH, HTTP, FTP, IMAP, SMTP, RDP, MySQL, etc.</li>
+                <li><strong>Commande :</strong> <code>hydra -l user -P passwords.txt target.com ssh</code></li>
+                <li><strong>Avantage :</strong> Parallélisation rapide</li>
+            </ul>
+
+            <h3>Outils WiFi et réseau</h3>
+            
+            <h4>📡 Aircrack-ng</h4>
+            <p>Suite complète pour l'audit des réseaux WiFi.</p>
+            <ul>
+                <li><strong>Airodump-ng :</strong> Capture et énumère les réseaux WiFi</li>
+                <li><strong>Aireplay-ng :</strong> Génère du trafic réseau</li>
+                <li><strong>Aircrack-ng :</strong> Craque les mots de passe WiFi</li>
+                <li><strong>Utilité :</strong> Audit complet des réseaux sans fil</li>
+            </ul>
+
+            <h4>🔌 Ettercap</h4>
+            <p>Outil de sniffing et MITM (Man-in-the-Middle).</p>
+            <ul>
+                <li><strong>Fonction :</strong> Capture des données, ARP spoofing, DNS spoofing</li>
+                <li><strong>Utilité :</strong> Tests de sécurité réseau</li>
+            </ul>
+
+            <h3>Outils post-exploitation avancés</h3>
+            
+            <h4>🐚 Mimikatz</h4>
+            <p>Outil pour extraire les credentials de Windows.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Dump des mots de passe, des tickets Kerberos</li>
+                <li><strong>Utilité :</strong> Post-exploitation sur Windows</li>
+                <li><strong>Avantage :</strong> Très efficace pour escalade de privilèges</li>
+            </ul>
+
+            <h4>🔌 Empire</h4>
+            <p>Framework de post-exploitation basé sur PowerShell.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Command & Control, post-exploitation</li>
+                <li><strong>Utilité :</strong> Maintenir l'accès</li>
+                <li><strong>Agent :</strong> S'exécute en mémoire, difficile à détecter</li>
+            </ul>
+
+            <h4>🎭 BeEF (Browser Exploitation Framework)</h4>
+            <p>Framework pour l'exploitation de navigateurs web.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Exploiter les navigateurs compromis</li>
+                <li><strong>Utilité :</strong> Contrôler des navigateurs, voler des données</li>
+                <li><strong>Modules :</strong> Keylogging, screenshot, redirection, etc.</li>
+            </ul>
+
+            <h4>🔓 Cobalt Strike</h4>
+            <p>Framework professionnel de post-exploitation et C2 (payant).</p>
+            <ul>
+                <li><strong>Fonction :</strong> Red team operations avancées</li>
+                <li><strong>Features :</strong> Beacons, pivoting, lateral movement</li>
+                <li><strong>Note :</strong> Outil professionnel (très cher)</li>
+            </ul>
+
+            <h3>Outils d'énumération avancée</h3>
+            
+            <h4>🔍 Enum4linux</h4>
+            <p>Énumération complète des systèmes Linux/Samba.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Extraire les informations des serveurs</li>
+                <li><strong>Détecte :</strong> Utilisateurs, partages, services</li>
+            </ul>
+
+            <h4>💻 BloodHound</h4>
+            <p>Outil de mapping des domaines Active Directory.</p>
+            <ul>
+                <li><strong>Fonction :</strong> Visualiser les chemins d'attaque dans Active Directory</li>
+                <li><strong>Utilité :</strong> Identifier les escalades de privilèges possibles</li>
+            </ul>
+
+            <h3>Distributions Linux pour le hacking</h3>
+            
+            <h4>🐉 Kali Linux</h4>
+            <p>Distribution Linux complète pour les tests de pénétration.</p>
+            <ul>
+                <li><strong>Contient :</strong> +600 outils de hacking pré-installés</li>
+                <li><strong>Avantage :</strong> Prêt à l'emploi, tous les outils</li>
+                <li><strong>Utilité :</strong> La référence du hacking</li>
+            </ul>
+
+            <h4>🔴 Parrot Security OS</h4>
+            <p>Alternative légère et rapide à Kali Linux.</p>
+            <ul>
+                <li><strong>Avantage :</strong> Plus léger, plus rapide</li>
+                <li><strong>Contient :</strong> Des outils similaires à Kali</li>
+            </ul>
+
+            <h4>🛡️ BlackArch Linux</h4>
+            <p>Distribution basée sur Arch Linux avec 2000+ outils.</p>
+            <ul>
+                <li><strong>Avantage :</strong> Très flexible, rolling release</li>
+                <li><strong>Utilité :</strong> Pour utilisateurs avancés</li>
+            </ul>
+
+            <h3>Outils de virtualisation</h3>
+            <ul>
+                <li><strong>VirtualBox :</strong> Gratuit, pratique pour débuter</li>
+                <li><strong>VMware Workstation :</strong> Professionnel, plus cher</li>
+                <li><strong>Hyper-V :</strong> Intégré à Windows Pro</li>
+                <li><strong>KVM :</strong> Pour Linux</li>
+            </ul>
+
+            <h3>Frameworks et scripts</h3>
+            
+            <h4>🐍 Exploit-DB</h4>
+            <p>Base de données d'exploits publics.</p>
+            <ul>
+                <li><strong>Contient :</strong> +60 000 exploits</li>
+                <li><strong>Site :</strong> exploit-db.com</li>
+            </ul>
+
+            <h4>📦 SearchSploit</h4>
+            <p>Outil CLI pour interroger Exploit-DB.</p>
+            <ul>
+                <li><strong>Commande :</strong> <code>searchsploit apache 2.4</code></li>
+            </ul>
+
+            <h3>Outils de documentation</h3>
+            <ul>
+                <li><strong>Notion :</strong> Organiser les findings</li>
+                <li><strong>CherryTree :</strong> Prise de notes structurée</li>
+                <li><strong>Dradis :</strong> Plateforme de reporting</li>
+            </ul>
+
+            <h3>⚠️ Bonnes pratiques pour l'utilisation des outils</h3>
+            <ul>
+                <li>✅ Utilisez les outils UNIQUEMENT sur des systèmes autorisés</li>
+                <li>✅ Documentez ce que vous faites</li>
+                <li>✅ Apprenez comment fonctionne chaque outil</li>
+                <li>✅ Testez d'abord dans un environnement isolé</li>
+                <li>✅ Respectez les lois locales</li>
+                <li>✅ Signalez les failles découvertes responsablement</li>
+                <li>✅ Mettez les outils à jour régulièrement</li>
+            </ul>
+
+            <h3>📊 Comparatif des outils web</h3>
+            <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+                <tr style="background:#667eea; color:white;">
+                    <th style="border:1px solid #ddd; padding:10px;">Outil</th>
+                    <th style="border:1px solid #ddd; padding:10px;">Coût</th>
+                    <th style="border:1px solid #ddd; padding:10px;">Facilité</th>
+                    <th style="border:1px solid #ddd; padding:10px;">Puissance</th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;"><strong>Burp Suite Pro</strong></td>
+                    <td style="border:1px solid #ddd; padding:10px;">💰💰💰</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;"><strong>OWASP ZAP</strong></td>
+                    <td style="border:1px solid #ddd; padding:10px;">Gratuit</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;"><strong>SQLmap</strong></td>
+                    <td style="border:1px solid #ddd; padding:10px;">Gratuit</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐⭐</td>
+                    <td style="border:1px solid #ddd; padding:10px;">⭐⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CyberSec Learning. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
