@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techniques de Hacking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🔒 CyberSec Learning</h1>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="types-menaces.html">Menaces</a></li>
+                <li><a href="cryptographie.html">Cryptographie</a></li>
+                <li><a href="reseaux.html">Réseaux</a></li>
+                <li><a href="web.html">Sécurité Web</a></li>
+                <li><a href="hacking.html">Hacking</a></li>
+                <li><a href="outils-hacking.html">Outils</a></li>
+                <li><a href="techniques-hacking.html" class="active">Techniques</a></li>
+                <li><a href="penetration-testing.html">Pen Testing</a></li>
+                <li><a href="ethique-legale.html">Éthique</a></li>
+                <li><a href="bonnes-pratiques.html">Bonnes Pratiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>⚙️ Techniques de Hacking</h2>
+            
+            <h3>🎯 Social Engineering (Ingénierie sociale)</h3>
+            <p>Manipulation psychologique pour obtenir des informations confidentielles.</p>
+            
+            <h4>Tactiques courantes :</h4>
+            <ul>
+                <li><strong>Pretexting :</strong> Se faire passer pour quelqu'un d'autre (IT support, etc.)</li>
+                <li><strong>Phishing :</strong> Envoyer des emails trompeurs</li>
+                <li><strong>Baiting :</strong> Laisser un USB infecté dans un parking</li>
+                <li><strong>Tailgating :</strong> Suivre quelqu'un à travers une porte sécurisée</li>
+                <li><strong>Quid pro quo :</strong> Proposer un service en échange d'informations</li>
+            </ul>
+
+            <h3>🔐 Attaques par brute force</h3>
+            <p>Essayer toutes les combinaisons possibles de mots de passe.</p>
+            
+            <h4>Types :</h4>
+            <ul>
+                <li><strong>Dictionary attack :</strong> Utilise une liste de mots courants</li>
+                <li><strong>Brute force :</strong> Essaie toutes les combinaisons possibles</li>
+                <li><strong>Hybrid attack :</strong> Combine dictionary et modifications (ajouter des chiffres)</li>
+                <li><strong>Rainbow tables :</strong> Tables pré-calculées de hashes</li>
+            </ul>
+
+            <h4>Défense :</h4>
+            <ul>
+                <li>✅ Mots de passe forts</li>
+                <li>✅ Limitation de tentatives</li>
+                <li>✅ Délai entre tentatives</li>
+                <li>✅ Authentification multi-facteurs</li>
+            </ul>
+
+            <h3>💉 Injection SQL</h3>
+            <p>Injecter du code SQL dans les champs de formulaire.</p>
+            
+            <h4>Exemple :</h4>
+            <pre>Champ de recherche : ' OR '1'='1
+Le système exécute : SELECT * FROM users WHERE name = '' OR '1'='1'</pre>
+
+            <h4>Conséquences :</h4>
+            <ul>
+                <li>Accès aux données de la base de données</li>
+                <li>Suppression ou modification de données</li>
+                <li>Contournement d'authentification</li>
+            </ul>
+
+            <h4>Défense :</h4>
+            <ul>
+                <li>✅ Requêtes préparées (Prepared Statements)</li>
+                <li>✅ Validation des entrées</li>
+                <li>✅ Utiliser des ORM</li>
+                <li>✅ Limiter les permissions de base de données</li>
+            </ul>
+
+            <h3>🔗 Man-in-the-Middle (MITM)</h3>
+            <p>Interception de communications entre deux parties.</p>
+            
+            <h4>Techniques :</h4>
+            <ul>
+                <li><strong>ARP Spoofing :</strong> Usurper l'adresse ARP</li>
+                <li><strong>DNS Spoofing :</strong> Rediriger vers un faux site</li>
+                <li><strong>SSL Stripping :</strong> Forcer HTTPS -> HTTP</li>
+                <li><strong>Packet Sniffing :</strong> Capturer les paquets</li>
+            </ul>
+
+            <h4>Exemple d'attaque :</h4>
+            <ol>
+                <li>L'attaquant se positionne entre le client et le serveur</li>
+                <li>Le client envoie des données pensant les envoyer au serveur</li>
+                <li>L'attaquant lit, modifie et transmet les données</li>
+                <li>Le serveur reçoit les données modifiées</li>
+            </ol>
+
+            <h4>Défense :</h4>
+            <ul>
+                <li>✅ Utiliser HTTPS/TLS</li>
+                <li>✅ Vérifier les certificats</li>
+                <li>✅ Utiliser un VPN</li>
+                <li>✅ Éviter les réseaux WiFi publics</li>
+            </ul>
+
+            <h3>🎣 Phishing avancé</h3>
+            <p>Faux emails et sites web pour voler les identifiants.</p>
+            
+            <h4>Techniques :</h4>
+            <ul>
+                <li><strong>Spear Phishing :</strong> Phishing ciblé (personnalisé)</li>
+                <li><strong>Whaling :</strong> Cibler les cadres supérieurs</li>
+                <li><strong>Clone Phishing :</strong> Cloner un vrai email</li>
+                <li><strong>SMTP spoofing :</strong> Falsifier l'adresse email</li>
+            </ul>
+
+            <h3>🚫 Contournement d'authentification</h3>
+            <p>Contourner les mécanismes de sécurité d'authentification.</p>
+            
+            <h4>Techniques :</h4>
+            <ul>
+                <li><strong>Default credentials :</strong> Utiliser les identifiants par défaut</li>
+                <li><strong>Credential stuffing :</strong> Utiliser des listes d'identifiants compromis</li>
+                <li><strong>Session hijacking :</strong> Voler les cookies de session</li>
+                <li><strong>Token replay :</strong> Réutiliser un token valide</li>
+            </ul>
+
+            <h3>🐚 Reverse Shell</h3>
+            <p>Obtenir un accès interactif à un système distant.</p>
+            
+            <h4>Comment ça marche :</h4>
+            <ol>
+                <li>L'attaquant exécute un payload sur la cible</li>
+                <li>La cible établit une connexion de retour à l'attaquant</li>
+                <li>L'attaquant obtient un shell interactif</li>
+                <li>L'attaquant peut exécuter des commandes</li>
+            </ol>
+
+            <h3>⬆️ Privilege Escalation</h3>
+            <p>Augmenter les droits d'accès après une intrusion initiale.</p>
+            
+            <h4>Types :</h4>
+            <ul>
+                <li><strong>Vertical escalation :</strong> D'utilisateur normal à administrateur</li>
+                <li><strong>Horizontal escalation :</strong> D'un utilisateur à un autre au même niveau</li>
+            </ul>
+
+            <h4>Techniques :</h4>
+            <ul>
+                <li>Exploitation de kernel vulnerabilities</li>
+                <li>Mauvaises permissions de fichiers</li>
+                <li>Sudo misconfiguration</li>
+                <li>SUID binaries</li>
+                <li>Tasks/Cron jobs</li>
+            </ul>
+
+            <h3>🎭 Spoofing</h3>
+            <p>Usurper l'identité de quelqu'un d'autre.</p>
+            
+            <h4>Types :</h4>
+            <ul>
+                <li><strong>IP Spoofing :</strong> Usurper une adresse IP</li>
+                <li><strong>MAC Spoofing :</strong> Changer l'adresse MAC</li>
+                <li><strong>Email Spoofing :</strong> Falsifier l'adresse email</li>
+                <li><strong>DNS Spoofing :</strong> Rediriger vers un faux serveur</li>
+            </ul>
+
+            <h3>🔙 Backdoors</h3>
+            <p>Portes d'accès secrètes pour revenir plus tard.</p>
+            
+            <h4>Types :</h4>
+            <ul>
+                <li>Comptes d'utilisateur cachés</li>
+                <li>Web shells</li>
+                <li>Rootkits</li>
+                <li>Trojan horses</li>
+            </ul>
+
+            <h3>📊 Distributed Denial of Service (DDoS)</h3>
+            <p>Surcharger un service pour le rendre inaccessible.</p>
+            
+            <h4>Types :</h4>
+            <ul>
+                <li><strong>Volumetric :</strong> Attaque par bande passante massive</li>
+                <li><strong>Protocol :</strong> Exploiter les failles de protocole</li>
+                <li><strong>Application :</strong> Cibler l'application elle-même</li>
+            </ul>
+
+            <h3>⚠️ IMPORTANT</h3>
+            <p>Ces techniques ne doivent être utilisées que dans un contexte légal et éthique !</p>
+            <ul>
+                <li>❌ Utiliser ces techniques sans permission = Criminel</li>
+                <li>✅ Les utiliser avec permission = Professionnel</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CyberSec Learning. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
