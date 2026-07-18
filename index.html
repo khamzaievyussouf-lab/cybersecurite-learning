@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage Cybersécurité</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        header h1 { 
+            color: #667eea; 
+            font-size: 2.5em; 
+            margin-bottom: 10px;
+        }
+        header p { 
+            color: #666; 
+            font-size: 1.1em;
+        }
+        
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .module {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #667eea;
+        }
+        .module:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .module h2 { 
+            color: #667eea; 
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .module ul { 
+            margin-left: 20px; 
+            line-height: 2;
+            list-style: none;
+        }
+        .module li:before {
+            content: "▶ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        footer {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        footer p {
+            color: #666;
+        }
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .github-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔐 Apprentissage Cybersécurité</h1>
+            <p>Apprenez les fondamentaux de la sécurité informatique de manière progressive</p>
+        </header>
+
+        <div class="modules">
+            <div class="module">
+                <h2>🐍 Python</h2>
+                <ul>
+                    <li>Bases de Python</li>
+                    <li>Socket et réseau</li>
+                    <li>Scripts d'automatisation</li>
+                    <li>Scraping web</li>
+                    <li>Cryptographie</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h2>🔍 Nmap</h2>
+                <ul>
+                    <li>Scan de réseau</li>
+                    <li>Détection de services</li>
+                    <li>Identification de vulnérabilités</li>
+                    <li>Scripts NSE</li>
+                    <li>Commandes essentielles</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h2>🐧 Linux</h2>
+                <ul>
+                    <li>Commandes de base</li>
+                    <li>Permissions et sécurité</li>
+                    <li>Gestion des utilisateurs</li>
+                    <li>Firewall et réseau</li>
+                    <li>Logs et monitoring</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h2>🌐 Réseau</h2>
+                <ul>
+                    <li>Modèle TCP/IP</li>
+                    <li>Protocoles (HTTP, DNS, etc)</li>
+                    <li>Adressage IP</li>
+                    <li>Ports et services</li>
+                    <li>Subnetting</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h2>🛡️ Sécurité Web</h2>
+                <ul>
+                    <li>OWASP Top 10</li>
+                    <li>SQL Injection</li>
+                    <li>XSS (Cross-Site Scripting)</li>
+                    <li>CSRF (Cross-Site Request Forgery)</li>
+                    <li>Authentification</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h2>🔑 Bonnes Pratiques</h2>
+                <ul>
+                    <li>Mots de passe forts</li>
+                    <li>Authentification 2FA</li>
+                    <li>Chiffrement</li>
+                    <li>Certificats SSL/TLS</li>
+                    <li>Gestion des risques</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>📚 Continuez votre apprentissage en cybersécurité | 🚀 Créé par <a href="https://github.com/khamzaievyussouf-lab" class="github-link">khamzaievyussouf-lab</a></p>
+        </footer>
+    </div>
+</body>
+</html>
