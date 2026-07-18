@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🔒 CyberSec Learning</h1>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="types-menaces.html">Menaces</a></li>
+                <li><a href="cryptographie.html">Cryptographie</a></li>
+                <li><a href="reseaux.html">Réseaux</a></li>
+                <li><a href="web.html" class="active">Sécurité Web</a></li>
+                <li><a href="bonnes-pratiques.html">Bonnes Pratiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>💻 Sécurité Web</h2>
+            
+            <h3>Menaces web courantes</h3>
+            <p>Internet offre de nombreuses opportunités mais aussi des risques. Voici les menaces les plus courantes.</p>
+
+            <h3>🎣 Phishing</h3>
+            <p>Le phishing est une tentative de vol d'informations par tromperie.</p>
+            <ul>
+                <li>Les attaquants envoient des emails faux qui semblent authentiques</li>
+                <li>Ils demandent de cliquer sur des liens malveillants</li>
+                <li>Ou de fournir des informations sensibles</li>
+                <li><strong>Comment vous protéger :</strong> Vérifiez l'adresse email, ne cliquez pas sur les liens suspects, regardez les URLs avec attention</li>
+            </ul>
+
+            <h3>🌐 Cross-Site Scripting (XSS)</h3>
+            <p>Une attaque qui injecte du code malveillant dans une page web.</p>
+            <ul>
+                <li>L'attaquant insère du JavaScript malveillant</li>
+                <li>Il s'exécute dans le navigateur de la victime</li>
+                <li>Peut voler des cookies ou des données personnelles</li>
+            </ul>
+
+            <h3>💉 Injection SQL</h3>
+            <p>Une technique qui exploite les failles dans les applications web.</p>
+            <ul>
+                <li>L'attaquant insère du code SQL dans les champs de formulaire</li>
+                <li>Le serveur exécute le code malveillant</li>
+                <li>Permet d'accéder ou de modifier les données de la base de données</li>
+                <li><strong>Exemple :</strong> Dans un champ de recherche : <code>' OR '1'='1</code></li>
+            </ul>
+
+            <h3>🔒 Cross-Site Request Forgery (CSRF)</h3>
+            <p>Une attaque qui vous fait exécuter des actions sans votre consentement.</p>
+            <ul>
+                <li>L'attaquant crée une page web malveillante</li>
+                <li>Vous visitez cette page sans le savoir</li>
+                <li>Elle envoie une requête à votre compte en utilisant vos données d'authentification</li>
+                <li>Peut transférer de l'argent ou changer vos paramètres</li>
+            </ul>
+
+            <h3>🚪 Attaques par force brute</h3>
+            <p>Les attaquants tentent de deviner votre mot de passe en essayant plusieurs combinaisons.</p>
+            <ul>
+                <li>Utilisent des listes de mots de passe courants</li>
+                <li>Essaient des variations de votre nom ou date de naissance</li>
+                <li>Peuvent utiliser des outils automatisés</li>
+                <li><strong>Protection :</strong> Mots de passe forts, limitation de tentatives, 2FA</li>
+            </ul>
+
+            <h3>📱 Clickjacking</h3>
+            <p>Une attaque qui vous trompe pour cliquer sur quelque chose que vous ne pensez pas cliquer.</p>
+            <ul>
+                <li>Un élément invisible recouvre un élément visible</li>
+                <li>Vous cliquez sur ce que vous voyez mais activez ce qui est caché</li>
+                <li>Peut vous abonner à un service ou partager du contenu</li>
+            </ul>
+
+            <h3>🔓 Fuites de données</h3>
+            <p>L'exposition accidentelle ou intentionnelle de données sensibles.</p>
+            <ul>
+                <li>Données mal configurées dans le cloud</li>
+                <li>Bases de données non sécurisées</li>
+                <li>Transmissions sans chiffrement</li>
+                <li>Employés négligents</li>
+            </ul>
+
+            <h3>🛡️ Pratiques de sécurité web</h3>
+            
+            <h4>Pour les utilisateurs :</h4>
+            <ul>
+                <li>✅ Vérifiez que les sites utilisent HTTPS (🔒)</li>
+                <li>✅ Utilisez des mots de passe forts et uniques</li>
+                <li>✅ Activez la double authentification (2FA)</li>
+                <li>✅ Soyez vigilant face aux emails suspects</li>
+                <li>✅ Ne cliquez pas sur les liens dans les emails</li>
+                <li>✅ Gardez votre navigateur à jour</li>
+                <li>✅ Utilisez un gestionnaire de mots de passe</li>
+                <li>✅ Vérifiez les URLs avant de naviguer</li>
+            </ul>
+
+            <h4>Pour les développeurs :</h4>
+            <ul>
+                <li>✅ Validez toutes les entrées utilisateur</li>
+                <li>✅ Utilisez des requêtes préparées contre les injections SQL</li>
+                <li>✅ Chiffrez les données sensibles</li>
+                <li>✅ Implémentez HTTPS/TLS</li>
+                <li>✅ Protégez contre le XSS et le CSRF</li>
+                <li>✅ Utilisez des headers de sécurité HTTP</li>
+                <li>✅ Faites des tests de sécurité régulièrement</li>
+                <li>✅ Gardez vos dépendances à jour</li>
+            </ul>
+
+            <h3>🔍 Signes d'une page web malveillante</h3>
+            <ul>
+                <li>❌ URL bizarre ou légèrement différente du site normal</li>
+                <li>❌ Certificat SSL invalide</li>
+                <li>❌ Vous êtes redirigé vers un autre site</li>
+                <li>❌ Demandes inattendues de mots de passe</li>
+                <li>❌ Beaucoup de publicités ou pop-ups</li>
+                <li>❌ Fautes d'orthographe ou de grammaire</li>
+                <li>❌ Le design est différent de la version normale</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CyberSec Learning. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
