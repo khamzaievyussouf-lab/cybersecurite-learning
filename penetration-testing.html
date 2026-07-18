@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests de Pénétration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🔒 CyberSec Learning</h1>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="types-menaces.html">Menaces</a></li>
+                <li><a href="cryptographie.html">Cryptographie</a></li>
+                <li><a href="reseaux.html">Réseaux</a></li>
+                <li><a href="web.html">Sécurité Web</a></li>
+                <li><a href="hacking.html">Hacking</a></li>
+                <li><a href="outils-hacking.html">Outils</a></li>
+                <li><a href="techniques-hacking.html">Techniques</a></li>
+                <li><a href="penetration-testing.html" class="active">Pen Testing</a></li>
+                <li><a href="ethique-legale.html">Éthique</a></li>
+                <li><a href="bonnes-pratiques.html">Bonnes Pratiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>🎯 Tests de Pénétration (Penetration Testing)</h2>
+            
+            <h3>Qu'est-ce qu'un test de pénétration ?</h3>
+            <p>Un test de pénétration (pen test) est une évaluation de sécurité autorisée où des professionnels tentent d'exploiter les vulnérabilités d'un système pour en identifier les failles.</p>
+
+            <h3>Types de tests de pénétration</h3>
+            
+            <h4>1️⃣ Black Box Testing</h4>
+            <p>Le testeur n'a aucune information préalable sur le système.</p>
+            <ul>
+                <li><strong>Approche :</strong> Comme un attaquant réel</li>
+                <li><strong>Avantage :</strong> Plus réaliste</li>
+                <li><strong>Inconvénient :</strong> Plus long et coûteux</li>
+            </ul>
+
+            <h4>2️⃣ White Box Testing</h4>
+            <p>Le testeur a accès complet aux informations (code source, architecture, etc.).</p>
+            <ul>
+                <li><strong>Approche :</strong> Inspection détaillée</li>
+                <li><strong>Avantage :</strong> Identification complète des failles</li>
+                <li><strong>Inconvénient :</strong> Moins réaliste</li>
+            </ul>
+
+            <h4>3️⃣ Gray Box Testing</h4>
+            <p>Le testeur a des informations partielles (entre black et white box).</p>
+            <ul>
+                <li><strong>Approche :</strong> Équilibrée</li>
+                <li><strong>Avantage :</strong> Bon compromis</li>
+            </ul>
+
+            <h3>📋 Phases d'un test de pénétration</h3>
+            
+            <h4>Phase 1️⃣ : Planification</h4>
+            <ul>
+                <li>Définir les objectifs du test</li>
+                <li>Établir le périmètre</li>
+                <li>Fixer les dates et heures</li>
+                <li>Définir les risques acceptables</li>
+                <li>Obtenir l'autorisation par écrit</li>
+            </ul>
+
+            <h4>Phase 2️⃣ : Reconnaissance</h4>
+            <ul>
+                <li>Recherche OSINT (Open Source Intelligence)</li>
+                <li>Identification des domaines et sous-domaines</li>
+                <li>Recherche d'informations publiques</li>
+                <li>Identification des employés clés</li>
+                <li>Recherche sur les réseaux sociaux</li>
+            </ul>
+
+            <h4>Phase 3️⃣ : Scanning</h4>
+            <ul>
+                <li>Scan de ports avec Nmap</li>
+                <li>Identification des services actifs</li>
+                <li>Identification des versions logicielles</li>
+                <li>Scan de vulnérabilités</li>
+                <li>Construction d'une carte du réseau</li>
+            </ul>
+
+            <h4>Phase 4️⃣ : Énumération</h4>
+            <ul>
+                <li>Énumération des utilisateurs</li>
+                <li>Énumération des partages réseau</li>
+                <li>Énumération des services</li>
+                <li>Énumération des bases de données</li>
+                <li>Identification des points d'entrée potentiels</li>
+            </ul>
+
+            <h4>Phase 5️⃣ : Exploitation</h4>
+            <ul>
+                <li>Exploitation des vulnérabilités trouvées</li>
+                <li>Gain d'accès initial</li>
+                <li>Validation des failles</li>
+                <li>Documentation des exploitations</li>
+                <li>Évaluation de l'impact</li>
+            </ul>
+
+            <h4>Phase 6️⃣ : Post-exploitation</h4>
+            <ul>
+                <li>Reconnaissance interne</li>
+                <li>Escalade de privilèges</li>
+                <li>Maintien d'accès</li>
+                <li>Extraction de données</li>
+                <li>Couverture des traces (documentation)</li>
+            </ul>
+
+            <h4>Phase 7️⃣ : Rapport</h4>
+            <ul>
+                <li>Documentation des failles</li>
+                <li>Évaluation de la sévérité</li>
+                <li>Recommandations de correction</li>
+                <li>Preuves de concepts (PoC)</li>
+                <li>Résumé exécutif</li>
+            </ul>
+
+            <h3>🔍 Méthodologies reconnues</h3>
+            
+            <h4>OWASP Testing Guide</h4>
+            <p>Guide pour tester les applications web.</p>
+            <ul>
+                <li>13 catégories de tests</li>
+                <li>100+ cas de test</li>
+                <li>Référence pour le web hacking</li>
+            </ul>
+
+            <h4>NIST SP 800-115</h4>
+            <p>Méthodologie générale des tests de sécurité.</p>
+            <ul>
+                <li>Phase 3 principaux : Planning, Execution, Reporting</li>
+                <li>Guide complet</li>
+            </ul>
+
+            <h4>PTES (Penetration Testing Execution Standard)</h4>
+            <p>Standard professionnel avec 7 phases.</p>
+            <ul>
+                <li>De la reconnaissance à la communication des résultats</li>
+                <li>Approche systématique</li>
+            </ul>
+
+            <h3>📊 Rapport de test de pénétration</h3>
+            
+            <h4>Contenu recommandé :</h4>
+            <ul>
+                <li><strong>Résumé exécutif :</strong> Vue d'ensemble pour les décideurs</li>
+                <li><strong>Résultats détaillés :</strong> Chaque vulnérabilité trouvée</li>
+                <li><strong>Preuves de concepts :</strong> Démonstration des failles</li>
+                <li><strong>Recommandations :</strong> Comment corriger</li>
+                <li><strong>Calendrier de correction :</strong> Priorités</li>
+                <li><strong>Méthodologie :</strong> Comment le test a été effectué</li>
+                <li><strong>Avertissements légaux :</strong> Cadre légal</li>
+            </ul>
+
+            <h3>⚠️ Niveaux de sévérité</h3>
+            <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+                <tr style="background:#667eea; color:white;">
+                    <th style="border:1px solid #ddd; padding:10px;">Sévérité</th>
+                    <th style="border:1px solid #ddd; padding:10px;">Description</th>
+                    <th style="border:1px solid #ddd; padding:10px;">Délai de correction</th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;">🔴 Critique</td>
+                    <td style="border:1px solid #ddd; padding:10px;">Accès système, données sensibles compromises</td>
+                    <td style="border:1px solid #ddd; padding:10px;">Immédiatement</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;">🟠 Haute</td>
+                    <td style="border:1px solid #ddd; padding:10px;">Accès non autorisé, escalade de privilèges</td>
+                    <td style="border:1px solid #ddd; padding:10px;">1-2 semaines</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;">🟡 Moyenne</td>
+                    <td style="border:1px solid #ddd; padding:10px;">Fuite d'information, services dégradés</td>
+                    <td style="border:1px solid #ddd; padding:10px;">1 mois</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ddd; padding:10px;">🟢 Basse</td>
+                    <td style="border:1px solid #ddd; padding:10px;">Impact limité, détection difficile</td>
+                    <td style="border:1px solid #ddd; padding:10px;">À planifier</td>
+                </tr>
+            </table>
+
+            <h3>💼 Rôles importants</h3>
+            
+            <h4>Testeur de pénétration</h4>
+            <ul>
+                <li>Effectue les tests</li>
+                <li>Identifie les failles</li>
+                <li>Crée les PoC</li>
+                <li>Rédige le rapport</li>
+            </ul>
+
+            <h4>Équipe rouge (Red Team)</h4>
+            <ul>
+                <li>Simule une attaque réelle</li>
+                <li>Peut utiliser l'ingénierie sociale</li>
+                <li>Tests plus complets et réalistes</li>
+            </ul>
+
+            <h4>Équipe bleu (Blue Team)</h4>
+            <ul>
+                <li>Défend le système</li>
+                <li>Répond aux attaques</li>
+                <li>Améliore la sécurité</li>
+            </ul>
+
+            <h3>✅ Bonnes pratiques</h3>
+            <ul>
+                <li>✅ Toujours obtenir l'autorisation écrite</li>
+                <li>✅ Respecter le périmètre défini</li>
+                <li>✅ Documenter tout ce que vous faites</li>
+                <li>✅ Signaler les failles responsablement</li>
+                <li>✅ Ne pas causer de dommages intentionnels</li>
+                <li>✅ Respecter la confidentialité des données</li>
+                <li>✅ Tester en dehors des heures critiques</li>
+            </ul>
+
+            <h3>🎓 Certifications en Pen Testing</h3>
+            <ul>
+                <li><strong>OSCP :</strong> Offensive Security Certified Professional (très difficile)</li>
+                <li><strong>CEH :</strong> Certified Ethical Hacker</li>
+                <li><strong>GPEN :</strong> GIAC Penetration Tester</li>
+                <li><strong>GWAPT :</strong> GIAC Web Application Penetration Tester</li>
+                <li><strong>eCPPT :</strong> eLearnSecurity Certified Professional Penetration Tester</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CyberSec Learning. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
